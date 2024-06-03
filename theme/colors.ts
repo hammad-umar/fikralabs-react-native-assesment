@@ -12,4 +12,5 @@ const pallete = {
 export const colors = {
   pallete,
   background: "#FF9C27",
+  shadowColor: "#000",
 } as const;

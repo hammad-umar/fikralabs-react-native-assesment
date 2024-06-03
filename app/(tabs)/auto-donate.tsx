@@ -1,10 +1,10 @@
-import { Text, View } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
 const AutoDonateScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Auto Donate Screen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

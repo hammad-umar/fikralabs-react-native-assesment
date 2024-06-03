@@ -1,10 +1,10 @@
-import { Text, View } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
 const PortfolioScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Portfolio Screen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

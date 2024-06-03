@@ -6,6 +6,7 @@ const pallete = {
   dark_gray: "#5A606D",
   light_gray: "#00000080",
   light_dark: "#3B3F49",
+  grey: "#8c9099",
 };
 
 export const colors = {

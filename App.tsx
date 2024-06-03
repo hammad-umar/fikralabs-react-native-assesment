@@ -1,5 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+
+// 1. Design the bottom tab.
+// 2. Resuable Components.
+//    -> Emergency Card.
+//    -> Featured Card.
+//    -> Event Card.
+//    -> Calculator Card.
+//    -> Action Card.
+
+// 3. Other Components.
+//    -> Progress, Header, Lists.
 
 export default function App() {
   return (
@@ -13,8 +24,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

@@ -11,98 +11,96 @@ import TabItem from "../../components/tab-item";
 
 const TabsLayout = () => {
   return (
-    <>
-      <Tabs
-        screenOptions={{
-          tabBarActiveTintColor: colors.pallete.primary,
-          tabBarInactiveTintColor: colors.pallete.grey,
-          tabBarShowLabel: false,
-          tabBarStyle: {
-            paddingTop: scale(20),
-            backgroundColor: colors.pallete.white,
-            borderTopEndRadius: scale(20),
-            borderTopLeftRadius: scale(20),
-            height: BOTTOM_NAV_HEIGHT,
-          },
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: colors.pallete.primary,
+        tabBarInactiveTintColor: colors.pallete.grey,
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          paddingTop: scale(20),
+          backgroundColor: colors.pallete.white,
+          borderTopEndRadius: scale(20),
+          borderTopLeftRadius: scale(20),
+          height: BOTTOM_NAV_HEIGHT,
+        },
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabItem
+              Icon={HomeIcon}
+              color={color}
+              name="Home"
+              focused={focused}
+            />
+          ),
         }}
-      >
-        <Tabs.Screen
-          name="index"
-          options={{
-            title: "Home",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabItem
-                Icon={HomeIcon}
-                color={color}
-                name="Home"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="auto-donate"
-          options={{
-            title: "Auto Donate",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabItem
-                Icon={AutoUpdateIcon}
-                color={color}
-                name="Auto Donate"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="round-up"
-          options={{
-            title: "Round Up",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabItem
-                Icon={RoundUpIcon}
-                color={color}
-                name="Round Up"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="portfolio"
-          options={{
-            title: "Portfolio",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabItem
-                Icon={PortfolioIcon}
-                color={color}
-                name="Portfolio"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-        <Tabs.Screen
-          name="profile"
-          options={{
-            title: "Profile",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabItem
-                Icon={ProfileIcon}
-                color={color}
-                name="Profile"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-      </Tabs>
-    </>
+      />
+      <Tabs.Screen
+        name="auto-donate"
+        options={{
+          title: "Auto Donate",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabItem
+              Icon={AutoUpdateIcon}
+              color={color}
+              name="Auto Donate"
+              focused={focused}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="round-up"
+        options={{
+          title: "Round Up",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabItem
+              Icon={RoundUpIcon}
+              color={color}
+              name="Round Up"
+              focused={focused}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="portfolio"
+        options={{
+          title: "Portfolio",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabItem
+              Icon={PortfolioIcon}
+              color={color}
+              name="Portfolio"
+              focused={focused}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          headerShown: false,
+          tabBarIcon: ({ color, focused }) => (
+            <TabItem
+              Icon={ProfileIcon}
+              color={color}
+              name="Profile"
+              focused={focused}
+            />
+          ),
+        }}
+      />
+    </Tabs>
   );
 };
 

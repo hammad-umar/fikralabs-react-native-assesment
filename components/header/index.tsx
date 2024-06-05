@@ -38,16 +38,18 @@ const styles = StyleSheet.create({
     paddingEnd: scale(20),
   },
   imgBgStyles: {
-    width: scale(170),
+    width: scale(160),
     justifyContent: "center",
-    height: scale(120),
+    height: scale(125),
   },
   logoContainer: {
+    paddingTop: scale(10),
     paddingLeft: scale(18),
   },
   contentContainer: {
     flexDirection: "row",
     gap: scale(20),
+    marginTop: scale(20),
   },
   textsContainer: {
     flexDirection: "row",

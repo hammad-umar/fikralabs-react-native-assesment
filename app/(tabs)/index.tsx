@@ -7,6 +7,7 @@ import {
   View,
   Text,
   TouchableOpacity,
+  StatusBar,
 } from "react-native";
 import { scale } from "../../theme/scale";
 import { SCREEN_WIDTH } from "../../theme/dimentions";
@@ -28,7 +29,8 @@ import ArrowIcon from "../../assets/icons/arrow-icon.svg";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <>
+      <StatusBar hidden />
       <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
         <ImageBackground
           style={styles.imgBgStyles}
@@ -113,7 +115,7 @@ const HomeScreen = () => {
           <Text style={styles.txt}>Volunteer with us</Text>
         </TouchableOpacity>
       </ScrollView>
-    </SafeAreaView>
+    </>
   );
 };
 

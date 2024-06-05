@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import { colors } from "../../theme/colors";
-import { BOTTOM_NAV_HEIGHT } from "../../theme/dimentions";
+import { BOTTOM_NAV_HEIGHT, PLATFORM_IOS } from "../../theme/dimentions";
 import { scale } from "../../theme/scale";
 import TabItem from "../../components/tab-item";
 import * as icons from "../../constants/icons";
@@ -17,7 +17,7 @@ const TabsLayout = () => {
           backgroundColor: colors.pallete.white,
           borderTopEndRadius: scale(20),
           borderTopLeftRadius: scale(20),
-          height: BOTTOM_NAV_HEIGHT,
+          height: PLATFORM_IOS ? BOTTOM_NAV_HEIGHT : scale(80),
         },
       }}
     >

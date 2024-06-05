@@ -2,12 +2,8 @@ import { Tabs } from "expo-router";
 import { colors } from "../../theme/colors";
 import { BOTTOM_NAV_HEIGHT } from "../../theme/dimentions";
 import { scale } from "../../theme/scale";
-import HomeIcon from "../../assets/icons/home-icon.svg";
-import AutoUpdateIcon from "../../assets/icons/auto-update-icon.svg";
-import RoundUpIcon from "../../assets/icons/round-up-icon.svg";
-import PortfolioIcon from "../../assets/icons/portfolio-icon.svg";
-import ProfileIcon from "../../assets/icons/profile-icon.svg";
 import TabItem from "../../components/tab-item";
+import * as icons from "../../constants/icons";
 
 const TabsLayout = () => {
   return (
@@ -32,7 +28,7 @@ const TabsLayout = () => {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabItem
-              Icon={HomeIcon}
+              icon={icons.HomeIcon}
               color={color}
               name="Home"
               focused={focused}
@@ -47,7 +43,7 @@ const TabsLayout = () => {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabItem
-              Icon={AutoUpdateIcon}
+              icon={icons.AutoUpdateIcon}
               color={color}
               name="Auto Donate"
               focused={focused}
@@ -62,7 +58,7 @@ const TabsLayout = () => {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabItem
-              Icon={RoundUpIcon}
+              icon={icons.RoundUpIcon}
               color={color}
               name="Round Up"
               focused={focused}
@@ -77,7 +73,7 @@ const TabsLayout = () => {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabItem
-              Icon={PortfolioIcon}
+              icon={icons.PortfolioIcon}
               color={color}
               name="Portfolio"
               focused={focused}
@@ -92,7 +88,7 @@ const TabsLayout = () => {
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <TabItem
-              Icon={ProfileIcon}
+              icon={icons.ProfileIcon}
               color={color}
               name="Profile"
               focused={focused}

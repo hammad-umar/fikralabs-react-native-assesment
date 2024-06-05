@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     flexDirection: "row",
     gap: scale(20),
-    marginTop: scale(20),
+    marginTop: scale(40),
   },
   textsContainer: {
     flexDirection: "row",

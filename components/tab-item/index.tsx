@@ -1,22 +1,37 @@
 import { FC } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { scale } from "../../theme/scale";
 import { colors } from "../../theme/colors";
 import { fonts } from "../../theme/typography";
+import * as icons from "../../constants/icons";
 
 interface TabItemProps {
-  Icon: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+  icon: any;
   color: string;
   name: string;
   focused: boolean;
 }
 
 const TabItem: FC<TabItemProps> = (props) => {
-  const { Icon, name, color, focused } = props;
+  const { icon, name, color, focused } = props;
 
   return (
     <View style={styles.container}>
-      <Icon fill={color} stroke={color} />
+      {name === "Home" && focused ? (
+        <Image
+          style={{ width: scale(23), height: scale(23) }}
+          source={icons.HomeFocusedIcon}
+          resizeMode="contain"
+        />
+      ) : (
+        <Image
+          style={{ width: scale(23), height: scale(23) }}
+          source={icon}
+          resizeMode="contain"
+          tintColor={color}
+        />
+      )}
+
       <Text
         style={
           !focused
